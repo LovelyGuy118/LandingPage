@@ -1,3 +1,8 @@
+.projects-root {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 .projects-logo {
     position: absolute;
     margin: 32px 0 0 75px;
@@ -27,7 +32,7 @@
     text-align: center;
 }
 
-.projects-content {
+.projects-text {
     position: absolute;
     width: 765px;
     height: 131px;
@@ -43,4 +48,22 @@
     
     color: #FFFFFF;
     
+}
+
+.projects-wrapper {
+    position: relative;
+    width: 84%;
+    margin: 0 auto;
+    top: 400px;
+}
+
+@media (max-width: 1280px) {
+    .projects-wrapper {
+        width: 90%;
+    }
+}
+
+.projects-content {
+    width: 100%;
+    position: absolute;
 }
