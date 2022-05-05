@@ -6,13 +6,19 @@
     margin-top: 255px;
 }
 
+.home-btn {
+    position: absolute;
+    margin-top: 825px;
+    margin-left: calc(50% - 75px);
+}
+
 .home-btn button {
+    
     background: transparent;
     border: 2px solid white;
     border-radius: 5px;
     width: 150px;
     height: 58px;
-    margin-top: 825px;
     color: white;
     font-family: Roboto;
     font-size: 24px;
