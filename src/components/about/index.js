@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div class="about-root">
       <div class="about-logo">
-        <img src="images/BigLogo.png" />
+        <img src="../images/BigLogo.png" />
         <span class="about-logo-link">Link</span>
         <span class="about-logo-dap">Dap</span>
       </div>

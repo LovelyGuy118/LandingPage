@@ -18,9 +18,9 @@ export default function Cursor({ children }) {
 
   const toggleCursorVisibility = () => {
     if (cursorVisible.current) {
-      dot.current.style.opacity = 1;
+      dot.current.style.display = "block";
     } else {
-      dot.current.style.opacity = 0;
+      dot.current.style.display = "none";
     }
   };
 
@@ -64,19 +64,9 @@ export default function Cursor({ children }) {
   };
 
   const animateDot = () => {
-    const shake = [2, -3, 1];
     _x.current += (endX.current - _x.current) / delay;
     _y.current += (endY.current - _y.current) / delay;
 
-    if (_x.current == endX.current && _y.current == endY.current) {
-      console.log("111111111111");
-      shake.map((val) => {
-        dot.current.style.top = _y.current + val + "px";
-        dot.current.style.left = _x.current + val + "px";
-
-        requestRef.current = requestAnimationFrame(animateDot);
-      });
-    }
     dot.current.style.top = _y.current + "px";
     dot.current.style.left = _x.current + "px";
     requestRef.current = requestAnimationFrame(animateDot);
@@ -105,7 +95,7 @@ export default function Cursor({ children }) {
   return (
     <>
       <div ref={dot} className="cursor-dot"></div>
-      <main>{children}</main>
+      <>{children}</>
     </>
   );
 }
