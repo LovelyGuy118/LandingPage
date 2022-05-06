@@ -1,4 +1,5 @@
 .projects-root {
+    position: relative;
     max-width: 1500px;
     margin: 0 auto;
 }
@@ -50,11 +51,17 @@
     
 }
 
+@media (max-width: 765px) {
+    .projects-text {
+        width: calc(100% - 87px);
+    }
+}
+
 .projects-wrapper {
     position: relative;
     width: 84%;
     margin: 0 auto;
-    top: 400px;
+    top: 600px;
 }
 
 @media (max-width: 1280px) {

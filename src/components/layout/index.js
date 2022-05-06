@@ -1,5 +1,4 @@
 import StarfieldAnimation from "react-starfield-animation";
-import "../../styles/about.css";
 
 export default function Home({ children }) {
   return (
